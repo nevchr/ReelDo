@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ReelDo</title><link rel="stylesheet" href="popup.css"></head><body>
+<header><img src="icon.svg" width="36" height="36" alt=""><strong>ReelDo<span>From saved to done.</span></strong></header>
+<h1>Make your saves useful.</h1><p>Open Instagram Saved or TikTok Favourites. Sync the page you choose into your existing lists.</p>
+<label for="limit">Maximum videos this sync</label><select id="limit"><option value="25">25 videos</option><option value="50">50 videos</option><option value="100" selected>100 videos</option></select>
+<label class="refresh-option"><input type="checkbox" id="auto-sort" checked> Sort readable captions with local rules</label>
+<label class="refresh-option"><input type="checkbox" id="refresh-thumbnails"><span id="refresh-label">Revisit previously captured saves</span></label>
+<button id="scan">Sync saved</button><button id="open" class="secondary">Open my workspace</button>
+<p id="status" role="status">v0.5.0 — User-started sync only. No background account access or phone-app sync.</p>
+<script src="popup.js" type="module"></script></body></html>

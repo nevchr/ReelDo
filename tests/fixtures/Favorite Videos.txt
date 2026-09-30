@@ -1,0 +1,11 @@
+Date: 2026-09-01 12:00:00
+Link: https://www.tiktok.com/@cook/video/7123456789012345678
+
+Date: 2026-09-01 12:00:00
+Link: https://www.tiktokv.com/share/video/7123456789012345678/
+
+Date: 2026-09-04 15:00:00
+Link: https://www.tiktok.com/@fitness/video/7456789012345678901
+
+Date: 2026-09-05 16:00:00
+Link: not a URL

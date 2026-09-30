@@ -1,0 +1,14 @@
+import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { transform } from 'esbuild';
+await copyFile('src/core.js', 'dist/core.js');
+await copyFile('src/capture.js', 'dist/capture.js');
+const reader = await transform(await readFile('src/capture.js','utf8'), { format:'iife', globalName:'ReelDoCapture', target:'chrome100' });
+await writeFile('dist/reader.js',reader.code + '\nglobalThis.ReelDoCapture = ReelDoCapture;\n');
+await copyFile('README.md', 'dist/README.md');
+await writeFile('dist/INSTALL.html', (await readFile('INSTALL.html','utf8')).replace('src="public/icon.svg"','src="icon.svg"'));
+await mkdir('artifacts', { recursive: true });
+const folder = resolve('dist');
+execFileSync('powershell.exe', ['-NoProfile', '-Command', `Compress-Archive -Path '${folder.replaceAll("'", "''")}\\*' -DestinationPath '${resolve('artifacts/ReelDo-extension.zip').replaceAll("'", "''")}' -Force`]);
+console.log('Extension ready: dist/ and artifacts/ReelDo-extension.zip');

@@ -1,0 +1,46 @@
+{
+  "Activity": {
+    "Favorite Videos": {
+      "FavoriteVideoList": [
+        {
+          "Date": "2026-09-01 12:00:00",
+          "Link": "https://www.tiktok.com/@cook/video/7123456789012345678?utm_source=synthetic"
+        },
+        {
+          "Date": "2026-09-01 12:00:00",
+          "Link": "https://www.tiktokv.com/share/video/7123456789012345678/"
+        },
+        {
+          "Date": "2026-09-02 13:00:00",
+          "Link": "https://www.tiktok.com/@films/video/7234567890123456789"
+        },
+        {
+          "Date": "2026-09-03 14:00:00",
+          "Link": "https://www.tiktok.com/@tech/video/7345678901234567890"
+        },
+        {
+          "Link": "https://vm.tiktok.com/short-synthetic/"
+        },
+        {
+          "Link": "https://evil.test/video/7456789012345678901"
+        },
+        null
+      ]
+    },
+    "Video Browsing History": {
+      "VideoList": [
+        {
+          "Link": "https://www.tiktok.com/@history/video/7999999999999999999"
+        }
+      ]
+    }
+  },
+  "Like List": [
+    {
+      "Link": "https://www.tiktok.com/@liked/video/7999999999999999998"
+    }
+  ],
+  "Profile": {
+    "UserName": "synthetic_fixture"
+  }
+}
